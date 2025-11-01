@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Simple responsive website template with HTML, CSS and JS" />
+  <title>Simple Website — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">SparkSite</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="siteNav" class="site-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Welcome to SparkSite</h1>
+        <p class="tagline">A clean, responsive starter website built with plain HTML, CSS and JavaScript.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#features">Explore features</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>Features</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Responsive layout</h3>
+          <p>Looks great on phones, tablets, and desktop — built with flexible CSS and a simple grid.</p>
+        </article>
+        <article class="card">
+          <h3>Accessible nav</h3>
+          <p>Keyboard-friendly navigation and semantic markup to improve usability and SEO.</p>
+        </article>
+        <article class="card">
+          <h3>Lightweight JS</h3>
+          <p>Small JavaScript file for interactivity — nav toggle, smooth scroll and simple form validation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>This template is ideal for small projects, landing pages, or learning how HTML/CSS/JS work together. Feel free to edit, extend, and reuse.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <form id="contactForm" class="form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required maxlength="60" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-row form-actions">
+          <button type="submit" class="btn primary">Send message</button>
+          <button type="reset" class="btn ghost">Reset</button>
+        </div>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> SparkSite — built with ❤️</p>
+      <nav class="footer-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
